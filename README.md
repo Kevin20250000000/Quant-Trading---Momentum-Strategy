@@ -16,7 +16,7 @@ Two methods are employed to calculate the annualized return of the momentum stra
 
 Arithmetic Average Return: Calculates the simple average of periodic returns, providing a straightforward measure of performance.
 
-Index-Weighted Average Return: Weights returns based on the market capitalization of each constituent, offering a perspective aligned with index performance.
+Compound Annual Growth Rate (CAGR): Accounts for the compounding effect of returns over time, offering a more accurate reflection of investment growth.
 
 Comparing these methods highlights differences in return estimation and provides insights into the impact of weighting schemes on performance evaluation.
 
