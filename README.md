@@ -61,3 +61,4 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 
 
+![image](https://github.com/user-attachments/assets/d0265f12-0deb-418b-a9ef-95f85ca5ad1d)
