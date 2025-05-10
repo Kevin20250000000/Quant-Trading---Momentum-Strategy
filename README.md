@@ -25,11 +25,39 @@ After formulating the momentum strategy, it is subjected to backtesting using ou
 
 This structured approach ensures a comprehensive evaluation of the momentum strategy, facilitating informed decision-making in quantitative trading practices.
 
-# ** Strategy**
-I. Get the components of S&P 500 stocks 
+# **Strategy**
+## **I. Get the components of S&P 500 stocks** 
 
-II. Downloading the daily stock prices of SP500 tickers
+### **1. Downloading the daily stock prices of SP500 tickers**
 
-III. Arithmetic average annual return
+### **2. Arithmetic average annual return**
+
+### **3.Buy and Hold Strategy**
+
+### **4.Compared Momentum & Buy and Hold Strategy ( Arithmetic average annual return )**
+
+
+## **II. Annualized average return considering compound return**
+
+### **Compared Momentum & Buy and Hold Strategy ( Compound return )**
+
+
+
+
+
+
+
+
+## **III. The Sharpe Ratio**
+
+
+
+
+
+
+## **IV. Evaluating Out-of-Sample Performance**
+
+
+
 
 
