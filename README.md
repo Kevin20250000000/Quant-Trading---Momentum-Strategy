@@ -37,11 +37,16 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 
 ### **2. Arithmetic average annual return**
+[Code]()
+
 
 ### **3.Buy and Hold Strategy**
+[Code]()
+
 
 
 ### **4.Compared Momentum & Buy and Hold Strategy ( Arithmetic average annual return )**
+[Code]()
 
 
 ## **II. Annualized average return considering compound return**
