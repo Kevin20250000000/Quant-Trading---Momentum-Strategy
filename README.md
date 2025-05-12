@@ -45,7 +45,7 @@ You could download the daily stock prices of SP500 tickers through the ode above
 
 
 ## **II. Annualized average return considering compound return**
-#### **Code**
+[Code]()
 
 ### **Compared Momentum & Buy and Hold Strategy ( Compound return )**
 
@@ -58,7 +58,7 @@ You could download the daily stock prices of SP500 tickers through the ode above
 
 
 ## **III. The Sharpe Ratio**
-#### **Code**
+[Code]()
 
 
 
@@ -66,7 +66,7 @@ You could download the daily stock prices of SP500 tickers through the ode above
 
 
 ## **IV. Evaluating Out-of-Sample Performance**
-#### **Code**
+[Code]()
 
 
 
