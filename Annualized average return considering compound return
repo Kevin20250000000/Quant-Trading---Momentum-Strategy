@@ -1,0 +1,56 @@
+# The top 10 highest return stocks （ compound interest ）
+total_return = (1 + formation_return).prod() - 1
+annualized_return = (1 + total_return) ** (252 / len(formation_return)) - 1
+top10 = annualized_return.sort_values(ascending=False).head(10).mean()
+
+# The bottom 10  return stocks （ compound interest ）
+bottom10 = annualized_return.sort_values().head(10).mean()
+
+# We long the top 10 return stocks, then short the bottom 10 return stocks
+strategy_com_returns = round(top10 - bottom10, 4)
+
+print(f"The annual return of Momentum Strategy is: {strategy_com_returns:.2%}")
+
+labels = ['Top 10 (Long)', 'Bottom 10 (Short)', 'Strategy']
+values = [top10 * 100, bottom10 * 100, strategy_com_returns * 100]
+
+plt.figure(figsize=(12, 7))
+plt.bar(labels, values, color=['teal', 'orange', 'purple'], width=0.5)
+plt.ylabel('Annual Return (%)')
+plt.title('Momentum Strategy Returns (Compound)')
+for i, v in enumerate(values):
+    plt.text(i, v + 0.5, f'{v:.2f}%', ha='center')
+plt.ylim(min(values) - 5, max(values) + 5)
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
+
+# Buy and Hold ( Compound return )
+buy_hold_daily_returns = formation_return.mean(axis=1)
+
+buy_hold_cumulative_return = (1 + buy_hold_daily_returns).prod() - 1
+
+n_days = formation_return.shape[0]
+buy_hold_annualized_return = (1 + buy_hold_cumulative_return) ** (252 / n_days) - 1
+
+buy_hold_average_annualized_return = round(buy_hold_annualized_return.mean(), 4)
+
+print(f"📈 The annual return of Buy and Hold: {buy_hold_average_annualized_return:.2%}")
+
+# buy_hold_annualized_return.mean()
+The_Spread_return = strategy_com_returns - buy_hold_average_annualized_return
+print(f"📆 The annual spread return: {The_Spread_return:.2%}")
+
+labels = ['Momentum Return', 'Buy & Hold Return', 'Spread']
+values = [strategy_com_returns * 100, buy_hold_average_annualized_return * 100, The_Spread_return * 100]
+
+plt.figure(figsize=(12, 7))
+plt.bar(labels, values, color=['teal', 'orange', 'purple'], width=0.5)
+plt.ylabel('Annual Return (%)')
+plt.title(' The Spread of the Two Strategies (Compound)')
+for i, v in enumerate(values):
+    plt.text(i, v + 0.5, f'{v:.2f}%', ha='center')
+plt.ylim(min(values) - 5, max(values) + 5)
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
