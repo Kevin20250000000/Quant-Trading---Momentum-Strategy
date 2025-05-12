@@ -41,7 +41,7 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 
 ### **3.Buy and Hold Strategy**
-[Code]()
+[Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Buy%20and%20Hold%20Strategy)
 
 
 
