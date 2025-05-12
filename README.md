@@ -32,7 +32,8 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 ### **1. Downloading the daily stock prices of SP500 tickers**
 #### **Code**
 
-#### **Data**
+You could download the daily stock prices of SP500 tickers through the ode above.
+
 
 ### **2. Arithmetic average annual return**
 
