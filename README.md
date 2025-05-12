@@ -46,7 +46,7 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 
 ### **4.Compared Momentum & Buy and Hold Strategy ( Arithmetic average annual return )**
-[Code]()
+[Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Compared%20Momentum%20&%20Buy%20and%20Hold%20Strategy%20(%20Arithmetic%20average%20annual%20return%20))
 
 
 ## **II. Annualized average return considering compound return**
