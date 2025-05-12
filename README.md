@@ -30,7 +30,8 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 #### **Code**
 
 ### **1. Downloading the daily stock prices of SP500 tickers**
-#### **Code Downloading the daily stock prices of SP500 tickers**
+[Code]()
+
 
 You could download the daily stock prices of SP500 tickers through the ode above.
 
