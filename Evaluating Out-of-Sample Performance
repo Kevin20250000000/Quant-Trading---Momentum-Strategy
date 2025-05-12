@@ -1,0 +1,47 @@
+# Evaluating Out-of-Sample Performance
+long_tickers = top_momentum_stocks.index.get_level_values(1).tolist()
+print(long_tickers)
+short_tickers = bottom_momentum_stocks.index.get_level_values(1).tolist()
+print(short_tickers)
+formation_period = pd.Timestamp('2024-12-31')
+future_start = formation_period + relativedelta(days=1)
+future_end = formation_period + relativedelta(months=3)
+future_returns = return_daily.loc[future_start:future_end]
+long_daily_returns = future_returns["Performance"][long_tickers]
+short_daily_returns = future_returns["Performance"][short_tickers]
+
+N = len(long_daily_returns)
+total_long_return = (1 + long_daily_returns).prod() - 1
+annualized_long_return = (1 + total_long_return) ** (252 / N) - 1
+
+total_short_return = (1 + short_daily_returns).prod() - 1
+annualized__short_return = (1 + total_short_return) ** (252 / N) - 1
+
+strategy_com_returns_back_test = round((annualized_long_return.mean() - annualized__short_return.mean()) * 100, 2)
+print(f"The annualized  return of the strategy is: {strategy_com_returns_back_test}%")
+
+ong_mean = annualized_long_return.mean().item()
+short_mean = annualized__short_return.mean().item()
+strategy_return = strategy_com_returns_back_test
+
+labels = ['Top 10 (Long)', 'Bottom 10 (Short)', 'Strategy (Long - Short)']
+values = [
+    long_mean * 100,
+    short_mean * 100,
+    strategy_return
+]
+
+plt.figure(figsize=(12, 7))
+plt.bar(labels, values, color=['teal', 'orange', 'purple'], width=0.4)
+plt.ylabel('Annualized Return (%)',fontsize=12)
+plt.title('Backtest Momentum Strategy (Annualized Returns)', fontsize=16)
+
+for i, v in enumerate(values):
+    plt.text(i, v + 0.5, f'{v:.2f}%', ha='center', fontsize=12)
+
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.ylim(min(values) - 5, max(values) + 5)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
