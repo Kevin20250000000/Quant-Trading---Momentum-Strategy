@@ -25,7 +25,7 @@ After formulating the momentum strategy, it is subjected to backtesting using ou
 
 This structured approach ensures a comprehensive evaluation of the momentum strategy, facilitating informed decision-making in quantitative trading practices.
 
-[The whole code]()
+#### **[The whole code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Momentum_Strategy_.ipynb)**
 
 # **Strategy**
 ## **I. Get the components of S&P 500 stocks** 
