@@ -1,0 +1,23 @@
+# The Sharpe Ratio
+top10_daily_returns = formation_return.mean().sort_values(ascending=False).head(10)
+bottom10_daily_returns = formation_return.mean().sort_values(ascending=True).head(10)
+long_returns_sharp = formation_return[top10_daily_returns.index].mean(axis=1)
+short_returns_sharp = formation_return[bottom10_daily_returns.index].mean(axis=1)
+strategy_daily_returns = long_returns_sharp - short_returns_sharp
+
+
+risk_free_daily_return = 0.02 / 252
+excess_return = strategy_daily_returns - risk_free_daily_return
+
+sharpe_ratio_annual = excess_return.mean() / excess_return.std() * np.sqrt(252)
+
+print("Sharpe Ratio (Annualized):", round(sharpe_ratio_annual, 2))
+
+plt.bar(['Strategy Sharpe Ratio'], [sharpe_ratio_annual], color='skyblue',width=0.8)
+plt.title('Annualized Sharpe Ratio of Strategy')
+plt.ylabel('Sharpe Ratio')
+plt.ylim(0, sharpe_ratio_annual + 1)
+plt.text(0, sharpe_ratio_annual + 0.05, f'{sharpe_ratio_annual:.2f}', ha='center')
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
