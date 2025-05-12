@@ -27,17 +27,21 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 # **Strategy**
 ## **I. Get the components of S&P 500 stocks** 
+#### **Code**
 
 ### **1. Downloading the daily stock prices of SP500 tickers**
+
 
 ### **2. Arithmetic average annual return**
 
 ### **3.Buy and Hold Strategy**
 
+
 ### **4.Compared Momentum & Buy and Hold Strategy ( Arithmetic average annual return )**
 
 
 ## **II. Annualized average return considering compound return**
+#### **Code**
 
 ### **Compared Momentum & Buy and Hold Strategy ( Compound return )**
 
@@ -48,7 +52,9 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 
 
+
 ## **III. The Sharpe Ratio**
+#### **Code**
 
 
 
@@ -56,6 +62,7 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 
 ## **IV. Evaluating Out-of-Sample Performance**
+#### **Code**
 
 
 
