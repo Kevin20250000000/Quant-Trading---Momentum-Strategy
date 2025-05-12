@@ -1,1 +1,8 @@
+# The return of Buy and Hold Strategy
+portfolio_daily_returns = formation_return.mean(axis=1)
 
+annualized_return_simple = portfolio_daily_returns.mean() * 252
+annualized_return_simple
+annualized_return_simple = round(annualized_return_simple, 4)
+
+print(f"📆 The annual return of Buy and Hold: {annualized_return_simple:.2%}")
