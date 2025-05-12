@@ -1,0 +1,38 @@
+# Downloading the daily stock prices of SP500 tickers
+from curl_cffi import requests
+session = requests.Session(impersonate="chrome")
+
+df_ticker = pd.DataFrame()
+
+for symbol in symbols:
+    data = yf.download(symbol, session=session, start='2020-01-02', end='2025-03-31', progress=False, auto_adjust=True)
+
+    # solve MultiIndex
+    if isinstance(data.columns, pd.MultiIndex):
+        data.columns = data.columns.get_level_values(0)
+
+    if not data.empty:
+        data["Symbol"] = symbol
+        df_ticker = pd.concat([df_ticker, data])
+
+df_ticker.reset_index(inplace=True)
+df_ticker.dropna(inplace=True)
+
+df_ticker.to_csv("SP500_stocks.csv", index=False)
+print("Data saved to SP500_stocks.csv")
+print(df_ticker.head())
+df_ticker
+
+stocks = df_ticker[['Date', 'Symbol', 'Close']]
+stocks_pivoted = stocks.pivot(index='Date', columns='Symbol', values='Close')
+print(stocks_pivoted.head())
+stocks_pivoted
+
+return_daily = stocks_pivoted.pct_change(periods=1).dropna()
+multi_index = pd.MultiIndex.from_tuples([('Performance', col) for col in stocks_pivoted.columns])
+stocks_pivoted.columns = multi_index
+
+formation_start = pd.Timestamp('2020-01-02')
+formation_end = pd.Timestamp('2024-12-31')
+
+formation_return = return_daily.loc[formation_start:formation_end]
