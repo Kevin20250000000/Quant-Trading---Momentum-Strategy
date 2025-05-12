@@ -39,6 +39,8 @@ You could download the daily stock prices of SP500 tickers through the code abov
 ### **2. Arithmetic average annual return**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Arithmetic%20average%20annual%20return)
 
+![image](https://github.com/user-attachments/assets/fb4b3bc4-a5af-4f98-8a79-3ceee60ec0b2)
+
 
 ### **3.Buy and Hold Strategy**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Buy%20and%20Hold%20Strategy)
@@ -48,13 +50,21 @@ You could download the daily stock prices of SP500 tickers through the code abov
 ### **4.Compared Momentum & Buy and Hold Strategy ( Arithmetic average annual return )**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Compared%20Momentum%20&%20Buy%20and%20Hold%20Strategy%20(%20Arithmetic%20average%20annual%20return%20))
 
+![image](https://github.com/user-attachments/assets/33dca44e-cdad-4c1c-8745-a84052479f70)
+
+
 
 ## **II. Annualized average return considering compound return**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Annualized%20average%20return%20considering%20compound%20return)
 
+![image](https://github.com/user-attachments/assets/25122468-1c7f-4278-b608-d71ebd8bbc85)
+
+
 ### **Compared Momentum & Buy and Hold Strategy ( Compound return )**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Compared%20Momentum%20%26%20Buy%20and%20Hold%20Strategy%20(%20Compound%20return%20))
 
+
+![image](https://github.com/user-attachments/assets/e53af414-de5c-4718-ab73-0209d1985f6b)
 
 
 
@@ -65,6 +75,9 @@ You could download the daily stock prices of SP500 tickers through the code abov
 ## **III. The Sharpe Ratio**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/The%20Sharpe%20Ratio)
 
+![image](https://github.com/user-attachments/assets/8e261f54-2b69-45e2-bf8d-8fd0384eb09b)
+
+
 
 
 
@@ -72,6 +85,9 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 ## **IV. Evaluating Out-of-Sample Performance**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Evaluating%20Out-of-Sample%20Performance)
+
+![image](https://github.com/user-attachments/assets/2acfeb93-2d0a-4fc8-8495-e6bfd0f06fa5)
+
 
 
 
