@@ -1,1 +1,13 @@
-### **Get the components of S&P 500 stocks through API**
+### Get the components of S&P 500 stocks through API
+url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+tables = pd.read_html(url, flavor='bs4')
+
+print(f"totally find  {len(tables)} tables")
+print(tables[0].head())
+SP500_df = constituent_stocks
+
+symbols = SP500_df.Symbol.values.tolist()
+symbols = [s.replace('.', '-') for s in symbols]
+symbols
+
+
