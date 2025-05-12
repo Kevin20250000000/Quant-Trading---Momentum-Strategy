@@ -1,1 +1,15 @@
+# Compared  Momentum & Buy and Hold Strategy ( Arithmetic average annual return )
+The_spread_return = strategy_returns_simple_return - annualized_return_simple
+print(f"📆 The annual spread return: {The_spread_return:.2%}")
+labels = ['The Buy and Hold return', 'The Momentum return', 'The spread return)']
+values = [annualized_return_simple * 100, strategy_returns_simple_return * 100, The_spread_return * 100]
 
+plt.figure(figsize=(12, 7))
+plt.bar(labels, values, color=['teal', 'green', 'purple'],width=0.5)
+plt.ylabel('Annual Return (%)')
+plt.title('The Spread Return')
+
+for i, v in enumerate(values):
+    plt.text(i, v + 0.5, f'{v:.2f}%', ha='center')
+
+plt.show()
