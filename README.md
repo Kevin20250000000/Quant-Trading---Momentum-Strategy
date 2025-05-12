@@ -50,10 +50,10 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 
 ## **II. Annualized average return considering compound return**
-[Code]()
+[Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Annualized%20average%20return%20considering%20compound%20return)
 
 ### **Compared Momentum & Buy and Hold Strategy ( Compound return )**
-
+[Code]()
 
 
 
