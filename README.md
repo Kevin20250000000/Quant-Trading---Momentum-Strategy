@@ -71,7 +71,7 @@ You could download the daily stock prices of SP500 tickers through the code abov
 
 
 ## **IV. Evaluating Out-of-Sample Performance**
-[Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/new/main)
+[Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Evaluating%20Out-of-Sample%20Performance)
 
 
 
