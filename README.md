@@ -27,7 +27,7 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 # **Strategy**
 ## **I. Get the components of S&P 500 stocks** 
-#### **Code**
+[Code]()
 
 ### **1. Downloading the daily stock prices of SP500 tickers**
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Downloading%20the%20daily%20stock%20prices%20of%20SP500%20tickers)
