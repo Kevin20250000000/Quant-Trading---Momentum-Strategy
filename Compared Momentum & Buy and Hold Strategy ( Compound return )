@@ -1,1 +1,29 @@
+# Buy and Hold ( Compound return )
+buy_hold_daily_returns = formation_return.mean(axis=1)
 
+buy_hold_cumulative_return = (1 + buy_hold_daily_returns).prod() - 1
+
+n_days = formation_return.shape[0]
+buy_hold_annualized_return = (1 + buy_hold_cumulative_return) ** (252 / n_days) - 1
+
+buy_hold_average_annualized_return = round(buy_hold_annualized_return.mean(), 4)
+
+print(f"📈 The annual return of Buy and Hold: {buy_hold_average_annualized_return:.2%}")
+
+# buy_hold_annualized_return.mean()
+The_Spread_return = strategy_com_returns - buy_hold_average_annualized_return
+print(f"📆 The annual spread return: {The_Spread_return:.2%}")
+
+labels = ['Momentum Return', 'Buy & Hold Return', 'Spread']
+values = [strategy_com_returns * 100, buy_hold_average_annualized_return * 100, The_Spread_return * 100]
+
+plt.figure(figsize=(12, 7))
+plt.bar(labels, values, color=['teal', 'orange', 'purple'], width=0.5)
+plt.ylabel('Annual Return (%)')
+plt.title(' The Spread of the Two Strategies (Compound)')
+for i, v in enumerate(values):
+    plt.text(i, v + 0.5, f'{v:.2f}%', ha='center')
+plt.ylim(min(values) - 5, max(values) + 5)
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
