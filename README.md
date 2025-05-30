@@ -28,13 +28,14 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 #### **[The whole code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Momentum_Strategy_.ipynb)**
 
 ## Installation
-1. Install the package
+### 1. Install the package:
    
 pip install yfinance --upgrade --no-cache-dir
 
 pip install curl_cffi
 
-2. Dependencies
+### 2. Dependencies
+   
 Python >= 3.6
 pandas >= 1.0
 numpy >= 1.18
