@@ -33,7 +33,7 @@ pip install yfinance --upgrade --no-cache-dir
 
 pip install curl_cffi
 
-### Dependencies
+2. Dependencies
 Python >= 3.6
 pandas >= 1.0
 numpy >= 1.18
