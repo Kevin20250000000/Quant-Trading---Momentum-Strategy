@@ -80,6 +80,8 @@ You could download the daily stock prices of SP500 tickers through the code abov
 ![image](https://github.com/user-attachments/assets/8e261f54-2b69-45e2-bf8d-8fd0384eb09b)
 
 
+### Max Drawdown
+![image](https://github.com/user-attachments/assets/1c19b537-b5e4-4a54-80ab-e5b8f3e80539)
 
 
 
