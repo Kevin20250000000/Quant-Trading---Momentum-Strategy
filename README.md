@@ -27,6 +27,10 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 #### **[The whole code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Momentum_Strategy_.ipynb)**
 
+## Setup
+!pip install yfinance --upgrade --no-cache-dir
+!pip install curl_cffi
+
 # **Strategy**
 ## **I. Get the components of S&P 500 stocks** 
 [Code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Get%20the%20components%20of%20S%26P%20500%20stocks)
