@@ -27,10 +27,19 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 #### **[The whole code](https://github.com/Kevin20250000000/Quant-Trading---Momentum-Strategy/blob/main/Momentum_Strategy_.ipynb)**
 
-## Setup
-!pip install yfinance --upgrade --no-cache-dir
+## Installation
+1. Install the package
+pip install yfinance --upgrade --no-cache-dir
 
-!pip install curl_cffi
+pip install curl_cffi
+
+### Dependencies
+Python >= 3.6
+pandas >= 1.0
+numpy >= 1.18
+matplotlib >= 3.1
+seaborn >= 0.11
+
 
 # **Strategy**
 ## **I. Get the components of S&P 500 stocks** 
