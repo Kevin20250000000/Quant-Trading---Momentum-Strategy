@@ -29,6 +29,7 @@ This structured approach ensures a comprehensive evaluation of the momentum stra
 
 ## Installation
 1. Install the package
+   
 pip install yfinance --upgrade --no-cache-dir
 
 pip install curl_cffi
